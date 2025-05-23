@@ -12,6 +12,7 @@
 		<%
 			String place=request.getParameter("place");
 			Cookie cookie = new Cookie("place",place);
+                        cookie.setMaxAge(60*60*24*30);
 			response.addCookie(cookie);
 		%>
 		
